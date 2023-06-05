@@ -23,8 +23,8 @@ To get started with the project, follow these steps:
 1. Clone the repository:
 
    ```shell
-   git clone https://github.com/your-username/your-repo.git
-   cd your-repo
+   git clone https://github.com/Rakesh-Raushan/segment-anything-gradio-demo.git
+   cd segment-anything-gradio-demo
 2. Create a virtual environment (optional but recommended)::
 
    ```shell
@@ -38,36 +38,23 @@ To get started with the project, follow these steps:
 
 To use the Gradio UI for segmenting anything, follow these steps:
 
-1. [Prepare your data or download a pre-trained model...]
-
-2. [Specify the necessary configurations or adjust the settings...]
-
-3. [Run the application...]
+1. [Run the application...]
 
     ```shell
     python app.py
     ```
 
     The Gradio UI will start running and display the local URL where you can access it (e.g., http://localhost:7860).
+    Since the model download happens the first time, it will take 3-4 mins to start.
 
-4. Interact with the Gradio UI to segment images or videos:
+2. Interact with the Gradio UI to segment images or videos:
 
-    - Select an image or video file by clicking on the "Upload" button.
-    - Choose the appropriate segmentation method (bounding box, polygon, or mask) from the dropdown menu.
-    - Use the drawing tool provided to mark the regions of interest.
-    - Click the "Segment" button to generate the corresponding segmentations.
+    - Select an image file by clicking on the "Upload".
+    - Click the "Submit" button to generate the corresponding segmentations.
     - The segmented results will be displayed alongside the original media.
+    - On CPU, complete segmentation is currently slow and takes around 50sec to execute.
 
-    ![Gradio UI](/path/to/screenshot.png)
-
-    **Note: Make sure you have a compatible web browser to access the Gradio UI.**
-## Examples
-
-Here are some examples demonstrating how to use the Gradio UI for segmenting different types of media:
-
-1. [Example 1: Segmentation on images...]
-
-2. [Example 2: Segmentation on videos...]
+    ![Gradio UI](./demo-screenshot.png)
 
 ## Acknowledgments
 
